@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <!--ShapeableImageView: Show first image from images of Ad-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageIv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:shapeAppearanceOverlay="@style/ImageStyle_Corners_Rounded"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_image_24"/>
+
+        <!--TextView: Ad Title-->
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="160dp"
+            android:text="The Ad Title"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!--TextView: Show date of the Ad when added-->
+        <TextView
+            android:id="@+id/dateTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:layout_toEndOf="@id/imageIv"
+            android:text="dd/MM/yyyy"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/titleTv"/>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

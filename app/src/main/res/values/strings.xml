@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">College Alert App</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="admin_sign_up_string">Admin Sign Up </string>
+    <string name="email__string">Email:</string>
+    <string name="password__string">Password: </string>
+    <string name="sign_up_string">Sign Up</string>
+    <string name="already_signed_up__login_here_string">Already signed up? Login here</string>
+    <string name="username_string">Username</string>
+</resources>

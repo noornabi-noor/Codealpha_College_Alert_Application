@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/DarkGreen">
+
+        <!-- ImageButton: Click to go-back -->
+        <ImageButton
+            android:id="@+id/toolbarBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:padding="15dp" />
+
+        <!-- TextView: Toolbar Title -->
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:text="Ad Details"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true" />
+
+        <!-- ImageButton: Edit the Ad (show this button only if the Ad is by the current user) -->
+        <ImageButton
+            android:id="@+id/toolbarEditBtn"
+            app:tint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_edit_24"
+            android:layout_toStartOf="@id/toolbarDeleteBtn"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="15dp" />
+
+        <!-- Delete button for Admin Only -->
+        <ImageButton
+            android:id="@+id/toolbarDeleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:padding="15dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarRl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <!-- ViewPager2: Show images of Ad, Slide left/right to change -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/imageSliderVp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+
+            <!-- TextView: Show Ad Title -->
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_below="@id/imageSliderVp"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                tools:text="@tools:sample/lorem[5]"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:maxLines="3"/>
+
+            <!-- TextView: Show the date of Ad posted e.g. 20/12/2023 -->
+            <TextView
+                android:id="@+id/dateTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="dd/MM/yyyy"
+                android:layout_below="@+id/titleTv"
+                android:layout_alignParentEnd="true" />
+
+
+            <!-- TextView: Show the Ad description label -->
+            <TextView
+                android:id="@+id/descriptionLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="italic"
+                android:layout_below="@id/dateTv"
+                android:layout_marginTop="30dp"/>
+
+            <!-- TextView: Show the Ad description -->
+            <TextView
+                android:id="@+id/descriptionTv"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@tools:sample/lorem[20]"
+                android:layout_below="@id/descriptionLabelTv" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

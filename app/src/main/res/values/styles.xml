@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- iphone_14___15_pro___1 styles -->
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="ImageStyle_Corners_Rounded">
+		<item name="cornerSize">10dp</item>
+		<item name="cornerFamily">rounded</item>
+	</style>
+
+
+
+</resources>

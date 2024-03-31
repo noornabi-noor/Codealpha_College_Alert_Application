@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/page_iphone_14___15_pro___1_ek1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/_bg__iphone_14___15_pro___1_ek2"
+            android:layout_width="500dp"
+            android:layout_height="920dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/_bg__iphone_14___15_pro___1_ek2_shape" />
+
+        <ImageView
+            android:id="@+id/star_1"
+            android:layout_width="83.69dp"
+            android:layout_height="77.79dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="star_1"
+            android:src="@drawable/star_1" />
+
+        <ImageView
+            android:id="@+id/star_2"
+            android:layout_width="83.69dp"
+            android:layout_height="77.79dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="327dp"
+            android:layout_marginTop="800dp"
+            android:layout_marginBottom="42dp"
+            android:contentDescription="star_2"
+            android:src="@drawable/star_2" />
+
+        <View
+            android:id="@+id/ellipse_2"
+            android:layout_width="130dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/ellipse_2_shape" />
+
+        <ImageView
+            android:id="@+id/ellipse_3"
+            android:layout_width="54.5dp"
+            android:layout_height="41.5dp"
+            android:layout_marginLeft="360.5dp"
+            android:layout_marginTop="-10.5dp"
+            android:contentDescription="ellipse_3"
+            android:src="@drawable/ellipse_3" />
+
+
+        <TextView
+            android:id="@+id/admin_LogIn"
+            android:layout_width="256.2dp"
+            android:layout_height="48.2dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="206dp"
+            android:text="User LogIn"
+            android:textColor="@color/admin_sign_up_color"
+            android:textSize="32sp"
+            android:textStyle="bold|italic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rectangle_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_3_shape"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="45dp"
+            app:boxCornerRadiusBottomStart="45dp"
+            app:boxCornerRadiusTopEnd="45dp"
+            app:boxCornerRadiusTopStart="45dp"
+            android:hint="Email"
+            android:textColorHint="#FF0000"
+            android:layout_below="@id/admin_LogIn"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rectangle_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_4_shape"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="45dp"
+            app:boxCornerRadiusBottomStart="45dp"
+            app:boxCornerRadiusTopEnd="45dp"
+            app:boxCornerRadiusTopStart="45dp"
+            android:hint="Password"
+            android:textColorHint="#FF0000"
+            android:layout_below="@id/rectangle_3"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/showPasswordCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#E60808"
+            android:layout_alignTop="@id/rectangle_4"
+            android:layout_alignBottom="@id/rectangle_4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"/>
+
+
+        <View
+            android:id="@+id/ellipse_4"
+            android:layout_width="189dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ellipse_4_shape"
+            android:layout_below="@id/rectangle_4"/>
+
+
+
+        <TextView
+            android:id="@+id/LogIn"
+            android:layout_width="67.4dp"
+            android:layout_height="21.4dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="25dp"
+            android:text="LogIn"
+            android:layout_below="@id/rectangle_4"
+            android:textColor="@color/sign_up_color"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LogIn"
+            android:layout_marginTop="20dp"
+            android:text="Forgot Password?"
+            android:textStyle="bold|italic"
+            android:textColor="@color/already_signed_up__login_here_color"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/not_signed"
+            android:layout_width="223.4dp"
+            android:layout_height="21.4dp"
+            android:text="Did not sign up? SignUp here"
+            android:textColor="@color/already_signed_up__login_here_color"
+            android:textSize="14sp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold|italic"
+            android:layout_below="@id/forgotPasswordTv"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/not_signed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@color/already_signed_up__login_here_color"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
